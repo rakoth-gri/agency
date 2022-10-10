@@ -1,0 +1,150 @@
+/* Refreshing some user Agent StyLES */
+*,
+::before,
+::after {
+	box-sizing: border-box;
+	padding: 0px;
+	margin: 0px;
+}
+
+/* CSS-переменные ***********/
+:root {
+	/* colors */
+	--app-h2-color: #585858;
+	--app-text-h1-color: #000000;
+	--app-headerLink-color: #e0e0e0;
+	--app-light-color: #fff;
+	--app-formElems-color: #8e8e8e;
+
+	/* font-size */
+	--app-h1-fs: 4rem;
+	--app-h2-fs: 42px;
+	--app-body-fs: 1rem;
+
+	/* background */
+	--app-section-bg: #2c2c2c;
+	--app-btn-bg: #ff2d2d;
+	--app-topSite-bg: #e0e0e0;
+	--app-header-bg: #000;
+	--app-formElems-bg: #f3f3f3;
+
+	/* font-weight */
+	--app-fw-light: 300;
+	--app-fw-medium: 600;
+	--app-fw-bold: 800;
+
+	/* line-height */
+	--app-lh-headers: 1.75;
+	--app-lh-text: 1.75;
+
+	/* font-family */
+	--app-ff-base: "Open Sans", Helvetica, Arial, sans-serif;
+
+	/* border-radius */
+	--app-btn-br: 5px;
+
+	/* MARGINS */
+	--app-medium-mr: 30px;
+	--app-small-mr: 15px;
+}
+
+/* Общие стили основных элементов **************************************************************/
+
+body {
+	font-family: var(--app-ff-base);
+}
+
+.container {
+	padding: 0 15px;
+	margin: 0 auto;
+	max-width: 1280px;
+}
+
+/* заголовки */
+.h2__styles {
+	color: var(--app-h2-color);
+	font-size: var(--app-h2-fs);
+	font-weight: var(--app-fw-medium);
+	line-height: var(--app-lh-headers);
+	text-transform: uppercase;
+}
+
+h3 {
+	letter-spacing: 1.5px;
+	font-weight: 600;
+	font-size: 22px;
+	margin-bottom: 10px;
+}
+
+/* текст */
+.text__styles {
+	color: var(--app-h2-color);
+	opacity: 0.9;
+	line-height: var(--app-lh-text);
+}
+
+/* кнопки в виде ссылок */
+.btn__styles {
+	color: var(--app-light-color);
+	background-color: var(--app-btn-bg);
+	font-size: 18px;
+	border-radius: var(--app-btn-br);
+	display: flex;
+	justify-content: center;
+	align-items: center;
+	text-transform: uppercase;
+	border: none;
+	font-weight: var(--app-fw-medium);
+}
+
+.btn__styles:hover {
+	color: var(--app-btn-bg);
+	background-color: var(--app-formElems-bg);
+	border: 2px solid var(--app-btn-bg);
+	font-weight: var(--app-fw-small);
+}
+
+hr {
+	background-color: var(--app-btn-bg);
+	border: none;
+	height: 3px;
+    width: 15%;
+}
+
+/* Form.elements */
+input,
+textarea {
+	display: flex;
+	align-items: center;
+	background: var(--app-formElems-bg);
+	border: none;
+	outline-color: var(--app-header-bg);
+	background-repeat: var(--app-btn-br);
+	font-family: Arial, Helvetica, sans-serif;
+	color: var(--app-formElems-color);
+}
+
+input::placeholder,
+textarea::placeholder {
+	font-size: 18px;
+	opacity: 0.8;
+	font-weight: 400;
+}
+
+/* Списки и ссылки */
+ul {
+	list-style-type: none;
+	list-style-position: inside;
+}
+
+a {
+	text-decoration: none;
+	cursor: pointer;
+}
+
+/* sections */
+section {
+	display: flex;
+	padding: 0 1vw;
+	justify-content: space-between;
+}

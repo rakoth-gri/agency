@@ -1,0 +1,150 @@
+@media screen and (max-width: 991.98px) {
+	/* Адаптивное меню (nav-->> ul.menu) */
+	.menu {
+		position: absolute;
+		top: -500%;
+		left: 50%;
+		transform: translateX(-50%);
+		flex-direction: column;
+		width: 140px;
+		align-items: center;
+		font-size: 20px;
+		background-color: #000;
+		transition: top 0.3s linear;
+		z-index: 1;
+	}
+
+	.menu__item {
+		width: 100%;
+	}
+
+	.menu.active {
+		top: calc(50% + 30%);
+	}
+
+	/* Бургер-Иконка */
+	.header__burger {
+		display: block;
+		z-index: 2;
+	}
+
+	/* секция intro */
+	.intro {
+		flex-direction: column;
+		align-items: stretch;
+	}
+
+	.intro__heading {
+		font-size: 2.5rem;
+	}
+
+	.intro__text,
+	.intro__heading,
+	.intro__image_link {
+		width: 90%;
+		margin-bottom: var(--app-medium-mr);
+	}
+
+	.intro__btn {
+		margin-bottom: var(--app-medium-mr);
+	}
+
+	/* Секция services  *********************************/
+
+	.services {
+		flex-direction: column;
+		justify-content: center;
+	}
+
+	.services__content,
+	.services__blocks {
+		width: 90%;
+		margin-bottom: 50px;
+	}
+
+	/* Блок products__filter -->> подсекция .members */
+
+	.products__filter {
+		flex-direction: column;
+		align-items: center;
+	}
+
+	.products__item {
+		margin-bottom: var(--app-small-mr);
+	}
+
+	.products__link {
+		font-size: calc(var(--app-body-fs) + 8px);
+	}
+
+	/* Секция team -->> подсекция .members */
+
+	.team__selectedInfo_link {
+		margin-right: var(--app-small-mr);
+	}
+
+	.team__members {
+		grid-template-columns: 100%;
+		grid-template-rows: repeat(3);
+		justify-items: center;
+	}
+
+	.team__selectedPhoto {
+		grid-row: 1/1;
+		grid-column: 1/1;
+		margin: 0 0 var(--app-medium-mr) 0;
+	}
+
+	/* Секция subscibe -->> подсекция .members */
+
+	.subscribe__heading {
+		font-size: 2rem;
+		padding: 0 5%;
+	}
+
+	.subscribe__form {
+		flex-direction: column;
+		align-items: center;
+	}
+
+	.subscribe__input {
+		width: 80%;
+		margin: 0px 0px var(--app-medium-mr) 0px;
+	}
+
+	/* feedback ****************** */
+
+	.feedback__contacts {
+		flex-direction: column;
+		align-items: center;
+	}
+
+	.feedback__message {
+		width: 100%;
+		resize: none;
+		height: auto;
+	}
+	.feedback__button {
+		margin-bottom: var(--app-medium-mr);
+	}
+
+	.contacts__decor {
+		min-height: 0px;
+	}
+
+
+}
+
+@media screen and (max-width: 699.98px) {
+
+	.footer__content {
+		flex-direction: column;
+		align-items: center;
+		justify-content: center;
+	}
+
+	.footer__copyright {
+		margin-bottom: var(--app-small-mr);
+	}
+
+}
