@@ -12,7 +12,7 @@ header {
 	position: relative;
 	display: flex;
 	justify-content: center;
-	align-items: center;
+	align-items: start;
 }
 
 /* бургерный контейнер */
@@ -31,8 +31,7 @@ header {
 	max-height: 100%;
 }
 
-/* ul в шапке */
-.menu {
+.menu__wrapper {
 	display: flex;
 	justify-content: center;
 }
@@ -204,6 +203,7 @@ header {
 	margin-bottom: 60px;
 }
 
+
 /* a */
 .products__link {
 	position: relative;
@@ -342,14 +342,14 @@ header {
 
 .member {
 	display: flex;
-	flex: 1 1 200px;
+	flex: 1 1 auto;
+	max-width: 200px;
 	position: relative;
 	justify-content: flex-start;
 }
 
 .member__photo {
-	width: 95%;
-	height: 200px;
+	width: 90%;
 	margin: 0 var(--app-small-mr) 0;
 }
 
@@ -558,3 +558,4 @@ footer {
 .footer__link img {
 	width: 95%;
 }
+

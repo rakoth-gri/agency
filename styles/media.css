@@ -1,27 +1,33 @@
 @media screen and (max-width: 991.98px) {
+	header {
+		align-items: center;
+	}
+
+	/* transition работает лучше с абсолютными единицами */
 	/* Адаптивное меню (nav-->> ul.menu) */
 	.menu {
 		position: absolute;
-		top: -500%;
+		top: calc(50% + 30%);
 		left: 50%;
 		transform: translateX(-50%);
-		flex-direction: column;
 		width: 140px;
-		align-items: center;
 		font-size: 20px;
 		background-color: #000;
-		transition: top 0.3s linear;
+		transition: all 0.3s linear;
 		z-index: 1;
+		max-height: 0px;
+		overflow: hidden;
+	}
+
+	.menu__wrapper {
+		display: block;
 	}
 
 	.menu__item {
 		width: 100%;
 	}
 
-	.menu.active {
-		top: calc(50% + 30%);
-	}
-
+	
 	/* Бургер-Иконка */
 	.header__burger {
 		display: block;
@@ -62,6 +68,8 @@
 		margin-bottom: 50px;
 	}
 
+	/* Секция features -->> раздел products__filter  *********************************/
+
 	/* Блок products__filter -->> подсекция .members */
 
 	.products__filter {
@@ -69,12 +77,12 @@
 		align-items: center;
 	}
 
-	.products__item {
-		margin-bottom: var(--app-small-mr);
+	.products__item {		
+		margin-bottom: 5px;		
 	}
 
-	.products__link {
-		font-size: calc(var(--app-body-fs) + 8px);
+	a.products__link {
+		font-size: calc(var(--app-body-fs) + 8px);				
 	}
 
 	/* Секция team -->> подсекция .members */
@@ -131,12 +139,9 @@
 	.contacts__decor {
 		min-height: 0px;
 	}
-
-
 }
 
 @media screen and (max-width: 699.98px) {
-
 	.footer__content {
 		flex-direction: column;
 		align-items: center;
@@ -146,5 +151,4 @@
 	.footer__copyright {
 		margin-bottom: var(--app-small-mr);
 	}
-
 }
